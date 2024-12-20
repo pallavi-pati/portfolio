@@ -1,15 +1,12 @@
 // script.js
-document.querySelectorAll("header nav ul li a").forEach(link => {
-    link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const target = document.querySelector(e.target.getAttribute("href"));
-        target.scrollIntoView({ behavior: "smooth" });
-    });
-});
+const hamburger = document.querySelector('.hamburger-menu');
+const sideMenu = document.querySelector('.side-menu');
 
-const form = document.querySelector("form");
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Thank you for your message!");
-    form.reset();
+// Toggle Side Menu
+hamburger.addEventListener('click', () => {
+    if (sideMenu.style.right === '0px') {
+        sideMenu.style.right = '-250px'; // Hide the menu
+    } else {
+        sideMenu.style.right = '0px'; // Show the menu
+    }
 });
