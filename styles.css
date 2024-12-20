@@ -1,7 +1,8 @@
+/* Side Menu */
 .side-menu {
     position: fixed;
     top: 0;
-    right: -250px; /* Initially hidden */
+    right: -250px; /* Hidden off-screen initially */
     width: 250px;
     height: 100vh;
     background: #333;
@@ -10,9 +11,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: right 0.3s ease-in-out; /* Smooth sliding */
+    transition: right 0.3s ease-in-out; /* Smooth animation */
     z-index: 1000;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .side-menu ul {
@@ -37,13 +37,7 @@
     color: #f39c12;
 }
 
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
+/* Hamburger Menu */
 .hamburger-menu {
     position: fixed;
     top: 20px;
@@ -55,4 +49,10 @@ body {
     background: #333;
     padding: 10px;
     border-radius: 5px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
