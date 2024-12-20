@@ -36,3 +36,23 @@
 .side-menu ul li a:hover {
     color: #f39c12;
 }
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+    color: #fff;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
