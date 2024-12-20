@@ -1,12 +1,4 @@
-// Smooth Scrolling for Section Links
-document.querySelectorAll('header nav ul li a, .side-menu ul li a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(e.target.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-    });
-});
-
+// script.js
 const hamburger = document.querySelector('.hamburger-menu');
 const sideMenu = document.querySelector('.side-menu');
 
